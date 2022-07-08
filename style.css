@@ -89,6 +89,7 @@ html {
 
 .h2_margin {
     margin: 30px 0;
+    opacity: 70%;
 } 
 
 .left {
@@ -229,7 +230,7 @@ h2.button:hover {
     background-color: white;
     border-radius: 30px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 30px;
     box-sizing: border-box;
@@ -281,6 +282,16 @@ h2.button:hover {
         background-color: #FCEADE;
     }
 
+    .mobile_black {
+        background-color: #333232;
+        color: white;
+    }
+
+    .mobile_white.black {
+        background-color: white;
+        color: #000;
+    }
+
     .colorless {
         padding: 0;
         justify-content: start;
@@ -299,7 +310,9 @@ h2.button:hover {
 }
 
 .card {
-    background-color: #FDC4AA;
+    /* background-color: #FDC4AA; */
+    background-color: white;
+    color: #000;
     border-radius: 30px;
     /* height: 300px; */
     padding: 120px 60px;
@@ -333,7 +346,7 @@ h2.button:hover {
 
 @media only screen and (max-width: 700px) {
     .card {
-        padding: 120px 60px;
+        padding: 90px 60px;
     }
 
     .cards{
@@ -374,12 +387,29 @@ h2.button:hover {
 .contacts img{
     margin-left: 120px;
     width: 100%;
-    height: 500px;
+    height: 450px;
     border-radius: 30px;
     object-fit: cover;
 }
 
 .contacts .button{
-    margin-top: 110px;
+    margin-top: 60px;
     color: #333232;
+}
+
+@media only screen and (max-width: 1150px) {
+    .contacts img{
+        width: 50%;
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .contacts img{
+        display: none;
+    }
+
+    .contacts_input {
+        justify-content: center;
+    }
 }
