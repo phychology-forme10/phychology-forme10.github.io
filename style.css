@@ -68,6 +68,7 @@ li:hover{
     }
 
     .block img{
+        /* height: 30px; */
         height: 20px;
     }
 }
@@ -334,6 +335,7 @@ h2.button:hover {
 
     .grid_one {
         grid-template-columns: 1fr 1fr;
+        margin-top: 0px;
     }
 }
 
@@ -366,7 +368,7 @@ h2.button:hover {
     .colorless {
         padding: 0;
         justify-content: start;
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
     }
 }
 
