@@ -114,16 +114,17 @@ html {
 
 h2.button {
     width: fit-content;
-    padding: 30px;
+    padding: 32px 36px;
     border-radius: 30px;
-    background-color: #50A2A7;
+    background-color: #FF9468;
     color: #FCEADE;
     box-sizing: border-box;
-    box-shadow: 0 6px black;
+    box-shadow: 0 6px #804131;
 }
 
 h2.button:hover {
-    background-color: #FF9468;
+    background-color: #50A2A7;
+
     /* background-color: white; */
     transform: translateY(6px);
     box-shadow: none;
@@ -181,6 +182,12 @@ h2.button:hover {
 
     .first_one img {
         margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .first_one h1{
+        font-size: 33px;
     }
 }
 
@@ -281,20 +288,22 @@ h2.button:hover {
     padding: 30px;
     box-sizing: border-box;
 
-    box-shadow: 0 6px black;
+    /* box-shadow: 0 6px rgb(107, 107, 107); */
 
 }
 
 
 .grid_hover:hover {
-    transform:  translateY(6px);
+    /* transform:  translateY(6px);
     box-shadow: none;
-    background-color: #50A2A7;
+    background-color: #333232;
+    color: white; */
+    /* background-color: #50A2A7; */
 }
 
 .grid_block.black {
-    /* background-color: #333232; */
-    /* color: white; */
+    background-color: #333232;
+    color: white;
 }
 
 .colorless {
@@ -329,7 +338,7 @@ h2.button:hover {
 
 @media only screen and (max-width: 700px) {
     .h1 {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .grid_one {
@@ -340,12 +349,12 @@ h2.button:hover {
     }
 
     .mobile_black {
-        /* background-color: #333232; */
-        /* color: white; */
+        background-color: #333232;
+        color: white;
     }
 
     .mobile_black:hover {
-        background-color: #50A2A7;
+        /* background-color: #50A2A7; */
     }
 
     .mobile_white.black {
@@ -424,12 +433,22 @@ h2.button:hover {
     }
 }
 
+@media only screen and (max-width: 380px) {
+    .card {
+        padding: 70px 35px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
 /* CONTACTS */
 .contacts {
     background-color: #333232;
-    padding: 60px 10%; 
+    padding: 60px 10% 30px; 
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .contacts h1 {
@@ -454,10 +473,14 @@ h2.button:hover {
     margin: 30px 0;
 }
 
-.contacts img{
-    margin-left: 120px;
-    width: 100%;
+.contacts .img_div {
     height: 450px;
+}
+
+.contacts img{
+    margin-right: 30px;
+    width: 90%;
+    height: 100%;
     border-radius: 30px;
     object-fit: cover;
 }
@@ -467,19 +490,57 @@ h2.button:hover {
     color: #333232;
 }
 
+input {
+    font-size: 20px;
+}
+
+.icons_container {
+    background-color: #333232;
+    padding-left: 10%;
+}
+
+.icon {
+    width: 37px;
+    padding-right: 30px;
+}
+
+.icons_container h2 {
+    color: grey;
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+.icons_container a{
+    color: grey;
+    text-decoration: underline;
+}
+
+.icons_container a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 1150px) {
     .contacts img{
-        width: 50%;
-        margin-left: 60px;
+        width: 80%;
+        /* margin-left: 60px; */
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 700px) {
     .contacts img{
         display: none;
     }
 
-    .contacts_input {
+    .contacts {
+        justify-content: left;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .contacts {
         justify-content: center;
     }
+
 }
