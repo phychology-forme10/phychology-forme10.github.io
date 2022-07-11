@@ -117,16 +117,17 @@ h2.button {
     padding: 32px 36px;
     border-radius: 30px;
     background-color: #FF9468;
-    color: #FCEADE;
+    color: #fff;
+    /* color: #FCEADE; */
     box-sizing: border-box;
-    box-shadow: 0 6px #804131;
+    box-shadow: 6px 6px #804131;
 }
 
 h2.button:hover {
     background-color: #50A2A7;
 
     /* background-color: white; */
-    transform: translateY(6px);
+    transform: translateY(6px) translateX(6px);
     box-shadow: none;
 }
 
@@ -373,7 +374,7 @@ h2.button:hover {
 
 .cards {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     margin: 60px 0;
     box-sizing: border-box;
@@ -381,21 +382,23 @@ h2.button:hover {
 
 .card {
     /* background-color: #FDC4AA; */
-    background-color: white;
+background-color: white;
     color: #000;
     border-radius: 30px;
     /* height: 300px; */
     padding: 120px 60px;
     box-sizing: border-box;
 
-    box-shadow: 0 6px black;
+    box-shadow: 6px 6px black;
 }
 
 .card:hover {
-    /* background-color: #FF9468; */
-    background-color: #50A2A7;
+    background-color: #f3bb9f;
+
+    color: #804131;
+    /* background-color: #50A2A7; */
     /* background-color: white; */
-    transform: translateY(6px);
+    transform: translateY(6px) translateX(6px);
     box-shadow: none;
 }
 
