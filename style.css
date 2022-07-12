@@ -202,7 +202,8 @@ h2.button:hover {
 
     padding: 60px;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.84);
+    background-color: #F6FAFB;
+    /* background-color: rgba(255, 255, 255, 0.84); */
     border-radius: 60px;
 }
 
@@ -383,23 +384,22 @@ h2.button:hover {
 }
 
 .card {
-    /* background-color: #FDC4AA; */
-background-color: white;
+    background-color: #FEC4AC;
+/* background-color: white; */
     color: #000;
     border-radius: 30px;
     /* height: 300px; */
     padding: 120px 60px;
     box-sizing: border-box;
 
-    box-shadow: 6px 6px black;
+    box-shadow: 6px 6px #804131;
 }
 
 .card:hover {
-    background-color: #f3bb9f;
-
+    /* background-color: #f3bb9f; */
     color: #804131;
-    /* background-color: #50A2A7; */
-    /* background-color: white; */
+    /* background-color: #FEC4AC; */
+    background-color: white;
     transform: translateY(6px) translateX(6px);
     box-shadow: none;
 }
