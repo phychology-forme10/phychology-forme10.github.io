@@ -44,14 +44,14 @@
             <div class="left">
                 <h1>Консультации с психологом</h1>
                 <h2 class="h2_margin">Помощь дипломированного специалиста.</h2>
-                <a href="#zapis"><h2 class="button">Записаться</h2></a>
+                <a href="#zapis"   id="obo_mne"><h2 class="button">Записаться</h2></a>
             </div>
             <!-- <div class="image_div"> -->
                 <img src="./images/eggs.png" alt="">
             <!-- </div> -->
         </div>
 
-        <div class="second_one"  id="obo_mne">
+        <div class="second_one">
             <div class="image_div">
                 <img class="fir" src="./images/seethegood.png" alt="">
             </div>
@@ -125,4 +125,12 @@
             </div>
         </div>
 </body>
+
+<!--  --------------  -->
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+</script>
 </html>

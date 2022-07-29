@@ -21,15 +21,25 @@ a {
 }
 
 /* HEADER */
-
 header {
     z-index: 100;
     top: 0;
     box-sizing: border-box;
-    padding: 0 10%;
+    padding: 10px 0;
+    margin: 0 10%;
     position: fixed;
-    width: 100%;
+    width: 80%;
     background-color: #FCEADE;
+    transition: 0.5s;
+    box-shadow: 0 2px #888686;
+}
+
+header.sticky{
+    background: #fff;
+    width: 100%;
+    padding: 0 10%;
+    margin: 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 .header_line {
@@ -37,6 +47,8 @@ header {
     text-decoration: none;
     border: none;
     height: 1px;
+
+    display: none;
 }
 
 ul {
