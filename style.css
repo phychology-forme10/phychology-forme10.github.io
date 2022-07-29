@@ -531,6 +531,10 @@ input {
     margin-right: 15px; */
 }
 
+.icon_center{
+    margin: 0 15px;
+}
+
 .icon:hover {
     /* opacity: 60%; */
 }
