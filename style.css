@@ -39,7 +39,8 @@ header {
 }
 
 header.sticky{
-    background: #fff;
+    background: #192324;
+    /* background: #fff; */
     width: 100%;
     padding: 0 10%;
     margin: 0;
@@ -77,7 +78,8 @@ header li {
 }
 
 header.sticky li {
-    color: #000;
+    color: #fff;
+    /* color: #000; */
 }
 
 
@@ -573,6 +575,8 @@ input {
 
 .icons_container {
     padding-left: 10%;
+    width: auto;
+    box-sizing: border-box;
 }
 
 .icon {
