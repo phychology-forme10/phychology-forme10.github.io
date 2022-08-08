@@ -14,7 +14,7 @@ h1 {
 h2 {
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 
 a {
@@ -29,7 +29,7 @@ header {
     padding: 10px 10%;
     /* margin: 0 10%; */
     position: fixed;
-    width: 100%;
+    width: 100vw;
     
     /* background-color: #FCEADE; */
     transition: 0.5s;
@@ -41,8 +41,9 @@ header {
 header.sticky{
     background: #192324;
     /* background: #fff; */
-    width: 100%;
+    width: 100vw;
     padding: 0 10%;
+    box-sizing: border-box;
     margin: 0;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
@@ -136,6 +137,8 @@ html {
 
 .body {
     padding: 70px 10% 0;
+    box-sizing: border-box;
+
     /* margin: 0 10%; */
 }
 
@@ -151,11 +154,13 @@ html {
 
 .first_one {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-gap: 30px; */
     align-items: center;
     /* margin: 60px 0; */
     /* margin-top: 120px; */
+    box-sizing: border-box;
+
     padding: 200px 10% 0;
     /* margin-bottom: 160px; */
 
@@ -188,7 +193,7 @@ h2.button {
     padding: 32px 36px;
     border-radius: 10px;
     /* background-color: #FDD7C4; */
-    background-color: #E9C35C;
+    background-color: #EED183;
     /* color: #A64F2C; */
     color: black;
     /* border: 2px solid #A64F2C; */
@@ -523,9 +528,10 @@ h2.button:hover {
 .contacts {
     /* background-color: #333232; */
     padding: 60px 10% 30px; 
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 120px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-gap: 120px; */
+    width: 400px;
 }
 
 .contacts h1 {
@@ -574,7 +580,7 @@ input {
 }
 
 .icons_container {
-    padding-left: 10%;
+    padding-top: 30px;
     width: auto;
     box-sizing: border-box;
 }
@@ -594,6 +600,7 @@ input {
 
 i.fa-brands {
     font-size: 40px;
+    color: white;
 }
 
 i.fa-brands:hover {
@@ -617,9 +624,10 @@ i.fa-brands:hover {
 }
 
 .contacts_container{
-    /* background-color: #333232; */
     background-color: #142B21;
-
+    background-image: url(./images/flower.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .button.last_button {
@@ -631,6 +639,16 @@ i.fa-brands:hover {
 .button.last_button:hover{
     background-color: #50A2A7;
 
+}
+
+@media only screen and (max-width: 999px) {
+    .contacts_container{
+        /* background-color: #142B21;
+        background-image: url(./images/flower.png);
+        background-repeat: no-repeat; */
+        background-position: right -200px bottom -200px;
+        transition: 2s;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -656,9 +674,23 @@ i.fa-brands:hover {
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 585px) {
+    .contacts_container{
+        /* background-color: #142B21; */
+        /* background-image: url(./images/flower.png); */
+        /* background-repeat: no-repeat; */
+        background-position: right -300px bottom -400px;
+        transition: 2s;
+    }
+}
+
+@media only screen and (max-width: 506px) {
     .contacts {
         justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+        /* width: max-content; */
     }
 
 }
