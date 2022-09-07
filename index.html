@@ -13,8 +13,8 @@
 <body>
     <header>
         <ul>
-            <li><a href="#">Обо мне</a></li>
-            <li class="nav_center"><a href="#">Работа</a></li>
+            <li><a href="#">Работа</a></li>
+            <li class="nav_center"><a href="#">Обо мне</a></li>
             <li><a href="#">Записаться</a></li>
         </ul>
     </header>
@@ -25,7 +25,7 @@
         </div>
         <div class="first_left">
             <h3 class="h3_center">Помощь дипломированного специалиста.</h3>
-            <button><h3>Записаться</h3></button>
+            <button>Записаться</button>
         </div>
         <div class="first_right pc">
             <img src="./resources/images/girl_noback.png" alt="">
@@ -86,11 +86,33 @@
             </div>
         </div>
     </div>
+
+    <div class="fifth_one">
+        <h2>Записывайтесь сегодня</h2>
+        <div class="input_div">
+            <input class="input" type="text" placeholder="Имя">
+            <input class="input center" type="text" placeholder="Телефон">
+            <input class="input" type="text" placeholder="Почта">
+            <button class="input_button"><h3>Записаться</h3></button>
+
+        </div>
+        <div class="icons">
+            <a href="#">
+                <img class='icon' src="./resources/images/icons/whatsapp-32.svg" alt="">
+            </a>
+            <a href="#">
+                <img class='icon center' src="./resources/images/icons/whatsapp-32.svg" alt="">
+            </a>
+            <a href="#">
+                <img class='icon' src="./resources/images/icons/whatsapp-32.svg" alt="">
+            </a>
+        </div>
+    </div>
 </body>
-<script>
-    // let boxx = document.getElementById(box);
-    // let clickFunc = function() {
-        // 
-    // }
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
 </script>
 </html>
