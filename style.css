@@ -4,19 +4,20 @@
 }
 
 h1 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 55px;
-    line-height: 55px;
-    text-transform: uppercase;
+    /* font-family: 'Playfair Display SC', serif; */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 65px;
+    line-height: 48px;
+    /* text-transform: uppercase; */
     color: #012868;
-    font-weight: 400;
-
-    letter-spacing: 4px;
-
+    font-weight: 900;
+    letter-spacing: 2%;
 }
 
 h2 {
-    font-family: 'Playfair Display SC', serif;
+    /* font-family: 'Playfair Display SC', serif; */
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-size: 34px;
     font-weight: 500;
     letter-spacing: 4px;
@@ -26,7 +27,7 @@ h2 {
 
 h3 {
     font-family: 'Comfortaa', cursive;
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(0, 39, 104, .6);
 
 }
@@ -35,7 +36,7 @@ h3 {
 header {
     padding: 60px 10%;
     box-sizing: border-box;
-    background-color: #FEE6D7;
+    background-color: #FFEDE3;
     position: fixed;
     width: 100%;
     transition: 0.5s;
@@ -51,7 +52,6 @@ header.sticky{
     margin: 0;
     /* box-shadow: 0 5px 20px rgba(0,0,0,0.1); */
     transition: 0.5s;
-
 }
 
 header.sticky li a{
@@ -59,11 +59,16 @@ header.sticky li a{
     /* color: #000; */
 }
 
+header.sticky li a:hover{
+    color: #FDB88E;
+    /* color: #000; */
+}
+
 
 ul {
     display: flex;
     font-family: 'Comfortaa', cursive;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 li {
@@ -79,9 +84,13 @@ li a{
     text-decoration: none;
 }
 
+li a:hover {
+  color: #012868;
+}
+
 /* FIRST ONE */
 .first_one {
-    background-color: #FEE6D7;
+    background-color: #FFEDE3;
     /* height:calc(100vh - 180px); */
     /* height: 100vh; */
     /* padding-top: 180px; */
@@ -97,12 +106,14 @@ li a{
     background-repeat: no-repeat; */
 }
 
+
+
 .first_right.mobile {
     display:none;
 }
 
 .first_one .h3_center {
-    margin: 20px 0;
+    margin: 0 0 20px;
 }
 
 .first_one .first_right {
@@ -130,11 +141,11 @@ li a{
 
 button {
     padding: 36px;
-    background-color: #FEE6D7;
-    border: 1px solid #012868;
+    background-color: #FEB88D;
+    border: none;
     border-radius: 5px;
     font-family: 'Comfortaa', cursive;
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(0, 39, 104, .6);
 
 }
@@ -150,6 +161,8 @@ button:hover {
         font-size: 40px;
         line-height: 40px;
     }
+
+
 }
 
 @media only screen and (max-width: 900px){
@@ -181,24 +194,34 @@ button:hover {
 .second_one {
     padding: 90px 10% 120px;
     box-sizing: border-box;
+    background-color: #FFEDE3;
 }
+
+/* h2 {
+  text-transform: uppercase;
+} */
 
 .second_grid {
     padding-top: 30px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* grid-gap: 30px; */
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 .second_grid .gridd {
-    border: 1px solid #3581AE;
-    padding: 60px;
+    /* border: 1px solid #3581AE; */
+    /* padding: 60px; */
     line-height: 40px;
+}
+
+.second_grid h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 850px){
     .second_grid{
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
 
     }
 }
@@ -206,7 +229,7 @@ button:hover {
 /* THIRD */
 .third_one {
     padding: 90px 10% 120px;
-    background-color: #FFEDE3;
+    background-color: #fff;
 }
 
 .third_grid {
@@ -241,34 +264,46 @@ button:hover {
     padding: 90px 10% 120px;
 }
 
-.fourth_one h2 {
-    margin-bottom: 30px;
+.fourth_one h3 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+    /* margin-bottom: 30px; */
 }
 
 .fourth_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 20px;
 }
 
 .box {
-    padding: 60px 60px;
+    padding: 30px;
     border: 1px solid #3581AE;
     border-radius: 5px;
     transition: .2s;
-
 }
 
-hr {
+.image_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_box {
+    overflow: hidden;
+}
+
+/* hr {
     color: #012868;
     box-shadow: #012868;
     margin: 10px 0;
-}
+} */
 
-.box:hover {
-    border: 1px solid #012868;
+/* .box:hover {
+    border: 2px solid #012868;
     transition: .2s;
-}
+} */
 
 @media only screen and (max-width: 980px){
     .fourth_grid{
@@ -303,7 +338,12 @@ hr {
     color: white;
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
+}
 
+input::placeholder {
+  /* color: #FFEDE3; */
+  color: white;
+  opacity: 30%
 }
 
 .input.center {
