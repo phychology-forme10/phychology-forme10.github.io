@@ -229,9 +229,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 850px){
-    .second_grid{
-        /* grid-template-columns: 1fr; */
-
+    .second_grid h3{
+        font-size: 25px;
     }
 }
 
@@ -306,6 +305,7 @@ button:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .image_box {
@@ -329,7 +329,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 790px){
     .fourth_grid{
         grid-template-columns: 1fr;
     }
@@ -341,76 +341,4 @@ button:hover {
     background-color: #012868;
     padding: 90px 10% 120px;
     box-sizing: border-box;
-}
-
-.input_div{
-    width: 400px;
-}
-
-.input {
-    width: 100%;
-    padding: 20px 30px;
-    background-color: #012868;
-    border: 1px solid rgba(250,250,250, 0.6);
-    box-sizing: border-box;
-    color: white;
-    font-size: 20px;
-    font-family: 'Comfortaa', cursive;
-}
-
-input::placeholder {
-  /* color: #FFEDE3; */
-  color: white;
-  opacity: 30%
-}
-
-.input.center {
-    margin: 10px 0;
-}
-
-.fifth_one h2 {
-    color: rgba(250,250,250, 0.6);
-    width: 400px;
-    margin-bottom: 30px;
-}
-
-.fifth_one .input_button {
-    margin: 30px 0;
-    width: 100%;
-    padding: 30px 0;
-    color: #012868;
-    background-color: white;
-}
-
-.fifth_one .input_button:hover {
-    background-color: #FEE6D7;
-}
-
-.icon {
-    width: 37px;
-    opacity: 60%;
-}
-
-.icon:hover {
-    opacity: 100%;
-}
-
-.icon.center {
-    margin: 0 15px;
-}
-
-@media only screen and (max-width: 500px){
-    .input_div{
-        width: 100%;
-    }
-
-    .fifth_one h2 {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 450px){
-    h2 {
-        font-size: 30px;
-    }
 }
